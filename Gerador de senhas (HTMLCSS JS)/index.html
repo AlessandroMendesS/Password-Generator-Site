@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <div id="container">
+        <img src="assets/img/illustration.svg" id="password_img" alt="">
+        <h1 id="title">Password Generator</h1>
+
+        <div id="password_container">
+            <span id="password"></span>
+            <button id="copy"><i class="fa-solid fa-copy"></i></button>
+        </div>
+
+        <div id="password_items">
+
+            <div class="item">
+                <input type="number" id="size" name="size">
+                <label for="size">Quantidade de caracteres</label>
+            </div>
+            
+            <div class="item">
+                <input type="checkbox" id="incluse_uppercase" name="incluse_uppercase">
+                <label for="incluse_uppercase">Letra Maiúcula</label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" id="incluse_lowercase" name="incluse_lowercase">
+                <label for="incluse_lowercase">Letra Minúscula</label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" id="incluse_number" name="incluse_number">
+                <label for="incluse_number">Número</label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" id="incluse_special_character" name="incluse_special_character">
+                <label for="incluse_special_character">Caracter Especial</label>
+            </div>
+
+            <button id="generate">
+                Gerar Senha
+            </button>
+
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
